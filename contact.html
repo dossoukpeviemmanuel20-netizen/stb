@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Synergie Trans Bénin</title>
+    <meta name="description" content="Contactez Synergie Trans Bénin. Nous sommes à votre écoute pour toute question, demande de soutien ou collaboration.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar container">
+            <div class="logo">
+                <h1>synergie</h1>
+                <span>TRANS BÉNIN</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a-propos.html">À Propos</a></li>
+                <li><a href="actions.html">Actions</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contactez-nous</h1>
+            <p>Nous sommes à votre écoute</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Parlons ensemble</h2>
+                    <p>Que vous ayez besoin d'aide, d'informations ou que vous souhaitiez collaborer avec nous, notre équipe est disponible pour vous répondre.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Adresse</h4>
+                                <p>Cotonou, Bénin</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Téléphone</h4>
+                                <p>+229 96 28 92 42</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>synergietransbenin2018@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-facebook"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Réseaux sociaux</h4>
+                                <p><a href="https://www.facebook.com/SynergieTransBe" target="_blank">Facebook</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Envoyez-nous un message</h3>
+                        
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" required placeholder="Votre nom">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+229 XX XX XX XX">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Sujet *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Choisissez un sujet</option>
+                                <option value="accompagnement">Demande d'accompagnement</option>
+                                <option value="information">Demande d'information</option>
+                                <option value="partenariat">Proposition de partenariat</option>
+                                <option value="benevolat">Bénévolat</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Votre message..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <i class="fas fa-paper-plane"></i> Envoyer le message
+                            </button>
+                        </div>
+                        
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hours Section -->
+    <section class="hours section bg-light">
+        <div class="container">
+            <h2 class="section-title">Horaires de permanence</h2>
+            <div class="hours-content">
+                <div class="hours-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Lundi - Vendredi</h3>
+                    <p>9h00 - 17h00</p>
+                </div>
+                <div class="hours-card">
+                    <i class="fas fa-phone-volume"></i>
+                    <h3>Ligne d'écoute</h3>
+                    <p>Disponible 7j/7</p>
+                </div>
+                <div class="hours-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Sur rendez-vous</h3>
+                    <p>Contactez-nous à l'avance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Confidentialité garantie</h2>
+                <p>Tous les échanges avec notre équipe sont confidentiels et respectent votre vie privée</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <h3>synergie</h3>
+                        <span>TRANS BÉNIN</span>
+                    </div>
+                    <p>Association communautaire pour les personnes transgenres au Bénin</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Cotonou, Bénin</p>
+                    <p><i class="fas fa-phone"></i> +229 96 28 92 42</p>
+                    <p><i class="fas fa-envelope"></i> synergietransbenin2018@gmail.com</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/SynergieTransBe" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Synergie Trans Bénin. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
